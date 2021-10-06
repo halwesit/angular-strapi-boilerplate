@@ -1,0 +1,37 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="invalid-feedback" *ngIf="error === 'Auth.form.error.invalid'"> Identifier or password invalid.
+      </div>
+      <mat-card-content>
+
+        <mat-form-field class="example-full-width">
+          <input matInput required type="email" name="email" formControlName="identifier" id="email" placeholder="Email"
+            [ngClass]="{ 'is-invalid': (isFormSubmitted && userForm.controls.identifier.errors) || (!userForm.controls.identifier.pristine && userForm.controls.identifier.invalid) }">
+        </mat-form-field>
+        <div class="invalid-feedback"
+          *ngIf="(isFormSubmitted && userForm.controls.identifier.errors) || (!userForm.controls.identifier.pristine && userForm.controls.identifier.invalid)">
+          <div *ngIf="userForm.controls.identifier.errors">Email is required, and please enter valid email</div>
+        </div>
+
+        <mat-form-field class="example-full-width">
+          <input matInput required type="password" name="password" formControlName="password" id="password"
+            placeholder="Password"
+            [ngClass]="{ 'is-invalid': (userForm && userForm.controls.password.errors) || (!userForm.controls.password.pristine && userForm.controls.password.invalid) }">
+        </mat-form-field>
+        <div class="invalid-feedback"
+          *ngIf="(isFormSubmitted && userForm.controls.password.errors) || (!userForm.controls.password.pristine && userForm.controls.password.invalid)">
+          <div *ngIf="userForm.controls.password.errors">Password is required, and minimum 8 characters required</div>
+        </div>
+
+      </mat-card-content>
+      <button mat-flat-button color="accent" class="btn-block">Log in</button>
+    </form>
+  </mat-card>
+
+</div>

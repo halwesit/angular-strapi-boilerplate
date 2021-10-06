@@ -1,0 +1,39 @@
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+input[type=text] {
+  padding: 3px 5px;
+  height: 25px;
+  border: 2px solid;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: 150px;
+  border: 2px solid;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.cdk-overlay-pane {
+  width: 100% !important;
+  max-width: 500px !important;
+}
+
+
+.title-flex {
+  font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}

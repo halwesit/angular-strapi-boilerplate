@@ -1,0 +1,24 @@
+<h1 mat-dialog-title class="title-flex">{{todo.title}}
+  <button mat-button style="color:red" (click)="closeModal()">
+    <mat-icon>close</mat-icon>
+  </button>
+</h1>
+<div mat-dialog-content>{{todo.content}}</div>
+<div mat-dialog-actions>
+
+  <button *ngIf="todo.done" mat-button style="color: black" (click)="undoneTodo(todo)">
+    <mat-icon> remove_circle </mat-icon>
+  </button>
+
+  <button *ngIf="!todo.done" mat-button style="color:green" (click)="doneTodo(todo)">
+    <mat-icon>check_circle</mat-icon>
+  </button>
+
+  <button mat-button color="primary" (click)="openEditDialog(todo)">
+    <mat-icon>edit</mat-icon>
+  </button>
+
+  <button mat-button style="color:red" (click)="deleteTodo(todo)">
+    <mat-icon>delete_forever</mat-icon>
+  </button>
+</div>

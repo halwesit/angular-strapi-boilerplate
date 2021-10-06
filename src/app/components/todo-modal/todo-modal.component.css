@@ -1,0 +1,23 @@
+/* .mat-dialog-actions {
+  padding: 8px 0;
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  box-sizing: content-box;
+  margin-bottom: -24px;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  flex-direction: row;
+} */
+
+.title-flex {
+  font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}

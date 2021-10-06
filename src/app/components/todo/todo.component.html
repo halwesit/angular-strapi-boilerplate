@@ -1,0 +1,13 @@
+<mat-list>
+  <button mat-flat-button color="accent" class="add-button" (click)="addNewTask()">
+    Add new Task
+  </button>
+
+  <mat-list-item *ngFor="let todo of Todos" class="mat-list-item" (click)="openDialog(todo)">
+    <mat-icon *ngIf="todo.done" style="color:green" mat-list-icon>check_circle</mat-icon>
+    <mat-icon *ngIf="!todo.done" style="color:red" mat-list-icon>remove_circle</mat-icon>
+    <h2 style="margin: auto 5px !important" primary> {{todo.title}} </h2>
+  </mat-list-item>
+
+
+</mat-list>

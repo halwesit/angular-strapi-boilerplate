@@ -1,0 +1,29 @@
+.mat-list-item {
+  background-color: #fff;
+  margin: 5px 0
+}
+
+.mat-list-item-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-list-base {
+  padding-top: 8px;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button {
+  width: 50%;
+  bottom: 10%;
+  position: absolute;
+  z-index: 2;
+}
