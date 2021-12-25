@@ -2,7 +2,6 @@
 # MyTodos
 ## About
 
-The project specialy made for the IQ company, after thier request in an interview with them.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7 and  [Strapi](https://strapi.io/) version 3.6.8 
 
 ## Backend 
